@@ -1,0 +1,152 @@
+.main
+  &-table
+    overflow-x: auto
+    & tbody 
+      & td
+        white-space: nowrap
+        font-size: 13px
+        line-height: 29px
+      & i 
+        line-height: 29px
+        font-size: 29px
+        color: #9ac941
+    & span
+      vertical-align: super
+    & .true
+      font-size: 13px
+      line-height: 15px
+      text-align: center
+      display: inline-block
+      color: #769935
+      padding: 5px 20px
+      background: rgba(154,201,65,.3)
+      border-radius: 13px
+.history
+  &__title
+    font-size: 18px
+
+
+.ref 
+  &-col
+    &_bg
+      background: url(../img/reg-bg.png) center no-repeat
+      background-size: cover 
+    &_1
+      font-size: 18px
+      background: #95847a
+    &_2
+      font-size: 18px
+      background: #626263
+  &-nav 
+    margin-bottom: 25px
+    &__btn
+      font-size: 14px
+      line-height: 15px
+      color: $color-main
+      border: 1px solid #F0F0F0
+      background: #fff
+      width: 19%
+      text-align: center
+      padding: 15px 5px
+      cursor: pointer
+      position: relative
+      transition: 0.5s
+      &:after
+        transition: 0.3s
+        content: ""
+        width: 3px
+        height: 0px
+        position: absolute
+        top: 100%
+        left: calc(50% - 1px)
+        background: $color-main
+        
+
+.tab
+  &-ref_active
+    background: $color-main !important
+    color: #fff !important
+    &:after
+      height: 30px !important
+  &-table 
+    white-space: nowrap
+    overflow-x: auto
+    & thead
+      background: $color-main
+      color: #ffffff
+      font-size: 14px
+      & th, td
+        padding-left: 15px
+        border-left: none !important
+        border-right: none !important
+    &-sec
+      & thead
+        background: $color-main
+        color: #ffffff
+        font-size: 14px
+
+.pass
+  &-text 
+    font-size: 14px
+    line-height: 17px
+    position: relative
+    &:after 
+      content: ""
+      background-color: darken($color-main, 20%)
+      position: absolute
+      right: 0
+      top: calc(50% - 10px)
+      width: 1px
+      height: 25px
+      transform: rotate(20deg)
+  &-icon 
+    &__lock, &__circle
+      font-size: 20px
+    &__circle
+      right: 15px
+      bottom: 20px
+  &-input
+    padding-top: 10px
+    font-size: 16px
+    background: none
+    border-top: none
+    border-left: none
+    border-right: none
+  &-check
+    font-size: 14px
+    line-height: 17px
+    color: #BC5656
+    background: rgba(255,68,64,.3)
+    position: relative
+    & .remove-pass-check
+      font-size: 25px
+      cursor: pointer
+      right: 20px
+      top: 15px
+
+@media (max-width: 786px)
+  .tab
+    &-table
+      font-size: 12px
+@media (max-width: 578px)
+  .ref-nav__btn
+    margin-bottom: 20px
+    margin-left: 2%
+    width: 30%
+    &:after
+      content: none
+  .pass
+    &-text 
+      &:after 
+        content: none
+@media (max-width: 480px)
+  .tab
+    &-table-sec
+      overflow-x: auto
+  .ref-nav__btn
+    width: 48%
+@media (max-width: 400px)
+  .ref-nav__btn
+    width: 100%
+    margin-left: 0
+  

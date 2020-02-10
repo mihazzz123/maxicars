@@ -1,0 +1,140 @@
+
+
+.right-img
+  background-image: url(../img/reg-bg-new.jpg)  
+  background-size: cover
+  background-repeat: no-repeat
+  // background-position: center center
+
+
+.main
+  &-form 
+    border: 1px solid #e8e9ed
+  &-col
+    max-width: 530px
+
+
+.form
+  &-button 
+    max-width: 355px
+        
+  &__btn
+    min-height: 50px
+    background: $color-main
+    transition: all .3s ease
+    font-size: 12px
+    color: #ffffff
+    outline: none
+    transition: 0.3s
+    position: relative
+    &:before
+      content: ""
+      position: absolute
+      top: 50%
+      left: -70px
+      transform: translateY(-50%)
+      background-image: url(../img/arrow-left-short.png)  
+      background-size: contain
+      background-repeat: no-repeat
+      width: 47px
+      height: 5px
+      display: block
+    &:after
+      content: ""
+      position: absolute
+      top: 50%
+      right: -70px
+      transform: translateY(-49%)
+      transform: rotate(180deg)
+      background-image: url(../img/arrow-left-short.png)  
+      background-size: contain
+      background-repeat: no-repeat
+      width: 47px
+      height: 5px
+      display: block
+    &:hover 
+      background: lighten($color-main, 10%)
+      color: #ffffff
+  &-checkbox
+    position: relative
+  &-title
+    font-size: 20px
+    & span
+      color: $sec-text
+
+.input-title
+  font-size: 11px
+  color: $sec-text
+  line-height: 1.2
+
+
+.input
+  &-block
+    padding: 10px 36px 10px 50px
+    box-shadow: 0 10px 20px 0 rgba(38, 15, 9, .06)
+  &-icon
+    left: 10px
+    top: 10px
+    font-size: 25px
+    color: $color-main
+  &-required
+    border: 1px solid #dc3545
+    box-shadow: 0 0 0 1px #ff4753
+.fa-times, .fa-check
+  right: 10px
+  top: 12.5px
+  font-size: 20px
+.fa-times
+  color: red
+.fa-check
+  color: green
+
+.main-input
+  outline: none
+  border: none 
+  background: none
+
+.main-label__checkbox
+  position: relative
+  display: block
+  padding-left: 30px
+  color: #28a745
+  font-size: 11px
+  cursor: pointer
+  &:after 
+    content: ""
+    top: 3px
+    left: 2px
+    position: absolute
+    width: 10px
+    height: 10px
+    border-radius: 50%
+    background: #9ac941
+    opacity: 0
+    transition: all 0.3s
+  &:before
+    content: ""
+    display: block
+    top: 0
+    left: -1px
+    position: absolute
+    width: 16px
+    height: 16px
+    border-radius: 50%
+    background: #e8e9ed
+    
+.input-checkbox:checked + label:after
+  opacity: 1
+
+.input-checkbox
+  visibility: hidden
+  position: absolute
+  width: 0.000001px
+  height: 0.000001px
+
+
+@media (max-width: 456px)
+  .form-button:before
+    left: 0
+  .form-button:after
+    right: 0

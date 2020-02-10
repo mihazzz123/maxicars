@@ -1,0 +1,158 @@
+
+
+
+// Личный кабинет
+
+.operator 
+  &__avatar
+    height: 112px
+    width: 112px
+    border-radius: 50%
+    border: 3px solid $color-main
+    display: flex
+    align-items: center
+    justify-content: center
+    & img 
+      width: 100px
+      height: 100px
+  &__type
+    font-size: 12px
+    line-height: 15px
+    color: #95847A
+  &__name
+    font-size: 16px
+    line-height: 16px
+    color: #626263
+  &__status
+
+.chat
+  font-family: 'Montserrat Medium',sans-serif
+  font-size: 14px
+  line-height: 17px
+  color: $sec-text
+  background: #f0f0f0
+  border-radius: 10px
+  border: none
+  padding: 20px 20px 20px 30px
+  &-panel
+    height: 300px
+    max-height: 300px
+    overflow-y: auto
+    overflow-x: hidden
+    padding-right: 20px
+    border-bottom: 1px solid rgba(0,0,0,.12)
+  &__out
+    margin-right: auto
+    background: #FFF
+    box-shadow: 0 3px 10px rgba(0,0,0,.04)
+    border-radius: 14px 14px 14px 4px
+    padding: 20px 30px
+    margin-bottom: 30px
+    & .chat__time-mess
+      bottom: -20px
+      left: 0
+      font-size: 12px 
+      line-height: 15px 
+      color: #95847A  
+  &__in
+    margin-left: auto
+    color: #fff
+    border-radius: 14px 14px 4px 14px
+    background: $color-main
+    box-shadow: 0 3px 10px rgba(0,0,0,.1)
+    padding: 20px 30px
+    margin-bottom: 30px
+    & .chat__time-mess
+      bottom: -20px
+      right: 0
+      font-size: 12px 
+      line-height: 15px 
+      color: #95847A  
+  &-quest
+    font-size: 14px
+    color: #fff
+    background: $color-main
+    box-shadow: 0 3px 10px rgba(0,0,0,.1)
+    border-radius: 8px
+    display: block
+    padding: 14px 30px
+    margin-right: 10px
+    margin-bottom: 10px
+    transition: all .3s
+    &:hover 
+      box-shadow: 0 3px 10px rgba(0,0,0,.3)
+      color: #fff
+      text-decoration: none
+  &-mess
+    margin-right: -20px
+    margin-left: -30px
+    margin-bottom: -20px
+    width: calc(100% + 50px) !important
+    padding: 30px 28px
+    background: #95847A
+    border-radius: 0 0 4px 4px
+    position: relative
+  &-input 
+    font-size: 14px
+    line-height: 17px
+    color: #979797
+    background: #FFF
+    border-radius: 15px
+    border: none
+    width: 100%
+    height: 58px
+    padding: 20px 150px 20px 30px
+  &__btn
+    background: none
+    border: none
+    outline: none
+    right: 50px
+    font-size: 16px
+    color: $color-main
+.deposite
+  &__title
+    font-size: 20px
+  &-item
+    border: 1px solid #E8E9ED
+    &__text
+      height: 88px
+    &__1
+      // border-right: 1px solid #E8E9ED
+      height: 88px
+      & img 
+        height: 56px
+    &__2
+      height: 88px
+      border-left: 1px solid #E8E9ED
+    &__3
+      height: 88px
+      border-left: 1px solid #E8E9ED
+    &__tag 
+      font-size: 12px
+      line-height: 13px
+      margin-bottom: 7px
+    &__val
+      font-size: 18px
+      line-height: 22px
+    &__btn
+      font-size: 13px
+      color: #fff
+      display: block
+      width: 170px
+      height: 46px
+      line-height: 46px
+      padding-left: 40px
+      background: $color-main
+      border-radius: 22px 14px 14px 22px
+      transition: all 0.3s
+      & i 
+        left: 5px
+        top: 5px
+        font-size: 35px
+      &:hover 
+        box-shadow: 0 3px 10px rgba(0,0,0,.3)
+        color: #ffffff
+        text-decoration: none
+
+
+

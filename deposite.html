@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" id="carspot-theme-slug-fonts-css" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,600,600italic,700,700italic,900italic,900,300,300italic%7CPoppins:400,500,600&amp;subset=latin,latin-ext" type="text/css" media="all">
+
+  <link rel="stylesheet" href="css/style.css">
+  <title>Document</title>
+</head>
+<body>
+
+  <header class="container-fluid header pb-5">
+    <div class="row pt-sm-4 pt-2 pb-2 mb-4 d-flex justify-content-between align-items-center main-container header-top">
+      <a href="#" class="d-block col-6 logo">
+        <img src="img/logo2.svg" alt="" class="logo-img">
+      </a>
+      <form method="POST" action="#" class="col-6 logIn position-relative text-right">
+          <input id="logIn" type="submit" class="logIn__input font-italic font-weight-bold text-uppercase">
+          <label for="logIn" class="text-uppercase logIn__label">войти</label>
+        </form>
+    </div>
+    <div class="row pt-md-5 pt-3 pb-5 align-items-center main-container">
+      <div class="col-lg-5 col-12 mb-2">
+        <span class="d-block header__title sec-text font-weight-bold">Личный кабтнет</span>
+        <span class="d-block header__user color-main font-weight-bold">User</span>
+      </div>
+      <div class="col-lg-7 col-12 pl-0 d-flex flex-wrap justify-content-lg-end justify-content-start">
+        <div class="d-flex px-4 flex-column header-block">
+          <small class="pb-2 header-block__tag text-white">
+            Дата регистрации 
+          </small>
+          <span class="header-block__text font-weight-bold text-white">
+            26.11.2019
+          </span>
+        </div>
+        <div class="d-flex px-4 flex-column header-block">
+          <small class="pb-2 header-block__tag text-white">
+            Ваша сумма депозитов:
+          </small>
+          <span class="header-block__text font-weight-bold text-white">
+            100.00 ₽
+          </span>
+        </div>
+        <div class="d-flex pl-4 flex-column">
+          <small class="pb-1 header-block__tag text-white">
+            Ваш баланс:
+          </small>
+          <span class="header-block__text font-weight-bold text-white">
+            0.0011 ₽
+          </span>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="container-fluid main-bg">
+    <div class="main-container bg-white tabs-block px-0 col-12">
+      <div class="w-100">
+        <div class="d-flex flex-wrap px- w-100 justify-content-center align-items-center col-12 tabs">
+          <a href="#" class="tab tab_active pt-2 px-4 font-weight-bold text-uppercase font-italic sec-text">
+            <i class="fas fa-wallet pr-3"></i>
+            Создать депозит
+          </a>
+          <a href="#" class="tab pt-2 px-4 font-weight-bold text-uppercase font-italic sec-text">
+            <i class="fas fa-cash-register pr-3"></i>
+            Вывод средств
+          </a>
+          <a href="#" class="tab pt-2 px-4 font-weight-bold text-uppercase font-italic sec-text">
+            <i class="far fa-list-alt pr-3"></i>
+            История операци
+          </a>
+          <a href="#" class="tab pt-2 px-4 font-weight-bold text-uppercase font-italic sec-text">
+            <i class="fas fa-users pr-3"></i>
+            Реферальная система
+          </a>
+          <a href="#" class="tab pt-2 px-4 font-weight-bold text-uppercase font-italic sec-text">
+            <i class="fas fa-cog pr-3"></i>
+            Настройки
+          </a>
+        </div>
+      </div>
+
+
+
+      <div class="container-fluid mt-4 pr-xl-4 pb-4 w-100">
+        <div class="row">
+          <form class="col-xxl-6 col-12 ">
+            <div class="d-flex flex-wrap balanse-add deposite-row">
+              <span class="text-uppercase font-weight-bold mr-3">Пополнение баланса</span>
+            </div>
+
+            <div class="d-flex payment flex-column bg-light rounded p-4 my-1 deposite-row">
+              <span class="payment__title text-uppercase pb-4 font-weight-bold font-italic">ВЫБЕРИТЕ ПЛАТЕЖНУЮ СИСТЕМУ</span>
+              <div class="payment-items d-flex row mx-0 flex-wrap">
+                <input type="radio" id="pm" name="payType" class="payment__input" checked="checked">
+                <label for="pm" class="payment__label">
+                  <img src="img/pm1.png" alt="">Perfect Money
+                  <div class="payment__label-active w-100 h-100 position-absolute align-items-center justify-content-center"><div class="payment__icon">
+                    <i class="fas fa-check-circle"></i></div>
+                  </div>
+                </label>
+                <input type="radio" id="payeer" name="payType" class="payment__input">
+                <label for="payeer" class="payment__label">
+                  <img src="img/pm2.png" alt="">Payeer
+                  <div class="payment__label-active w-100 h-100 position-absolute align-items-center justify-content-center"><div class="payment__icon">
+                    <i class="fas fa-check-circle"></i></div>
+                  </div>
+                </label>
+                <input type="radio" id="yad" name="payType" class="payment__input">
+                <label for="yad" class="payment__label">
+                  <img src="img/pm4.png" alt="">Яндекс.Деньги
+                  <div class="payment__label-active w-100 h-100 position-absolute align-items-center justify-content-center"><div class="payment__icon">
+                    <i class="fas fa-check-circle"></i></div>
+                  </div>
+                </label>
+                <input type="radio" id="qiwi" name="payType" class="payment__input">
+                <label for="qiwi" class="payment__label">
+                  <img src="img/pm5.png" alt="">Qiwi
+                  <div class="payment__label-active w-100 h-100 position-absolute align-items-center justify-content-center"><div class="payment__icon">
+                    <i class="fas fa-check-circle"></i></div>
+                  </div>
+                </label>
+                <input type="radio" id="visa" name="payType" class="payment__input">
+                <label for="visa" class="payment__label">
+                  <img src="img/pm6.png" alt="">Visa
+                  <div class="payment__label-active w-100 h-100 position-absolute align-items-center justify-content-center"><div class="payment__icon">
+                    <i class="fas fa-check-circle"></i></div>
+                  </div>
+                </label>
+                <input type="radio" id="mir" name="payType" class="payment__input">
+                <label for="mir" class="payment__label">
+                  <img src="img/pm7.png" alt="">МИР
+                  <div class="payment__label-active w-100 h-100 position-absolute align-items-center justify-content-center"><div class="payment__icon">
+                    <i class="fas fa-check-circle"></i></div>
+                  </div>
+                </label>
+                <input type="radio" id="master" name="payType" class="payment__input">
+                <label for="master" class="payment__label">
+                  <img src="img/pm8.png" alt="">MasterCard
+                  <div class="payment__label-active w-100 h-100 position-absolute align-items-center justify-content-center"><div class="payment__icon">
+                    <i class="fas fa-check-circle"></i></div>
+                  </div>
+                </label>
+                <input type="radio" id="maestro" name="payType" class="payment__input">
+                <label for="maestro" class="payment__label">
+                  <img src="img/pm9.png" alt="">Maestro
+                  <div class="payment__label-active w-100 h-100 position-absolute align-items-center justify-content-center"><div class="payment__icon">
+                    <i class="fas fa-check-circle"></i></div>
+                  </div>
+                </label>
+                <input type="radio" id="bitcoin" name="payType" class="payment__input">
+                <label for="bitcoin" class="payment__label">
+                  <img src="img/pm10.png" alt="">Bitcoin
+                  <div class="payment__label-active w-100 h-100 position-absolute align-items-center justify-content-center"><div class="payment__icon">
+                    <i class="fas fa-check-circle"></i></div>
+                  </div>
+                </label>
+              </div>
+            </div>
+            <div class="d-flex pay flex-column rounded p-4 my-3 bg-light deposite-row">
+              <span class="payment__title d-block text-uppercase pb-4 font-weight-bold font-italic">ВВЕДИТЕ СУММУ</span>
+              <div class="pay-input d-flex flex-wrap flex-sm-nowrap">
+                <input type="text" placeholder="введите сумму" class="w-sm-75 w-100 mb-3 mb-sm-0 font-weight-bold text-uppercase pay__input">
+                <input id="rub" type="radio" name="valet" class="pay-input__valet" checked="checked">
+                <label class="ml-auto ml-sm-3" for="rub"><img src="img/rub.svg" alt=""></label>
+                <input id="usd" type="radio" name="valet" class="pay-input__valet">
+                <label for="usd"><img src="img/usd.svg" alt=""></label>
+              </div>
+            </div>
+            <div class="d-flex p-4 my-2 flex-column pay-text">
+              <span class="font-italic py-2">
+                Пополнение через Пластиковые карты от 500 рублей до 75 000 рублей за одну операцию
+              </span>
+              <span class="font-italic py-2">
+                Пополнение через Яндекс.Деньги, от 500 рублей до 150 000 рублей за одну операцию.
+              </span>
+              <span class="font-italic py-2">
+                Пополнение через Payeer, PerfectMoney и AdvCash от 10$ до 100 000$ за одну операцию.
+              </span>
+            </div>
+            <div class="d-flex pay-btn mb-5 mx-0 px-0 w-100">
+              <button class="pay__btn text-center text-uppercase text-white font-weight-bold">Пополнить баланс</button>
+            </div>
+          </form>
+          <div class="col-xxl-6 col-12">
+            <span class="d-block pb-4 text-uppercase gain__title font-weight-bold">подсчет <span class="sec-text">Прибыли:</span></span>
+            <div class="gain-block rounded mt-1 text-white flex-column gain-calc p-4 d-flex">
+              <span class="gain__subtitle pb-3 font-weight-bold text-white text-uppercase">ВАШ РАСЧЕТ ПРИБЫЛИ</span>
+              <div class="d-flex flex-wrap gain-row">
+                <div class="gain-calc__col mb-4 d-flex flex-column">
+                  <span class="d-block bg-main text-uppercase deposite-tag mb-1 p-0 font-weight-bold font-italic">за 7 дней</span>
+                  <span class="d-block bg-main text-uppercase deposite-val p-0 font-weight-bold">178.50</span>
+                </div>
+                <div class="gain-calc__col mb-4 d-flex flex-column">
+                  <span class="d-block bg-main text-uppercase deposite-tag mb-1 p-0 font-weight-bold font-italic">за 30 дней</span>
+                  <span class="d-block bg-main text-uppercase deposite-val p-0 font-weight-bold">765.00</span>
+                </div>
+                <div class="gain-calc__col mb-4 d-flex flex-column">
+                  <span class="d-block bg-main text-uppercase deposite-tag mb-1 p-0 font-weight-bold font-italic">за 100 дней</span>
+                  <span class="d-block bg-main text-uppercase deposite-val p-0 font-weight-bold">2550.00</span>
+                </div>
+                <div class="gain-calc__col mb-4 d-flex flex-column">
+                  <span class="d-block bg-main text-uppercase deposite-tag mb-1 p-0 font-weight-bold font-italic">за 360 дней</span>
+                  <span class="d-block bg-main text-uppercase deposite-val p-0 font-weight-bold">9180.00</span>
+                </div>
+                <div class="gain-calc__col mb-4 d-flex flex-column">
+                  <span class="d-block bg-main text-uppercase deposite-tag mb-1 p-0 font-weight-bold font-italic">за 500 дней</span>
+                  <span class="d-block bg-main text-uppercase deposite-val p-0 font-weight-bold">12750.00</span>
+                </div>
+              </div>
+            </div>
+            <div class="history">
+              <span class="d-block pb-4 pt-2 text-uppercase history__title font-weight-bold">история <span class="sec-text">пополнений:</span></span>
+              <div class="history-block">
+                <table class="history-table text-uppercase font-weight-bold font-italic text-white w-100 text-leftr">
+                  <thead class="bg-main">
+                    <tr>
+                      <td width="65%">Дата</td>
+                      <td>Сумма</td>
+                    </tr>
+                  </thead>
+                  <tbody class="color-text">
+                    <tr>
+                      <td>Дата</td>
+                      <td>Сумма</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+
+    <div class="row p-5">
+      <span class="px-5 w-100 text-center font-weight-bold font-italic copyright">
+        Copyright © 2019. Maxicars Service All Rights Reserved
+      </span>
+    </div>
+  </div>
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

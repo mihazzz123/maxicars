@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" id="carspot-theme-slug-fonts-css" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,600,600italic,700,700italic,900italic,900,300,300italic%7CPoppins:400,500,600&amp;subset=latin,latin-ext" type="text/css" media="all">
+
+  <link rel="stylesheet" href="css/style.css">
+  <title>Document</title>
+</head>
+<body>
+
+  <header class="container-fluid header pb-5">
+    <div class="row pt-sm-4 pt-2 pb-2 mb-4 d-flex justify-content-between align-items-center main-container header-top">
+      <a href="#" class="d-block col-6 logo">
+        <img src="img/logo2.svg" alt="" class="logo-img">
+      </a>
+      <form method="POST" action="#" class="col-6 logIn position-relative text-right">
+        <input id="logIn" type="submit" class="logIn__input font-italic font-weight-bold text-uppercase">
+        <label for="logIn" class="text-uppercase logIn__label">войти</label>
+      </form>
+    </div>
+    <div class="row pt-md-5 pt-3 pb-5 align-items-center main-container">
+      <div class="col-lg-5 col-12 mb-2">
+        <span class="d-block header__title sec-text font-weight-bold">Личный кабтнет</span>
+        <span class="d-block header__user color-main font-weight-bold">User</span>
+      </div>
+      <div class="col-lg-7 col-12 pl-0 d-flex flex-wrap justify-content-lg-end justify-content-start">
+        <div class="d-flex px-4 flex-column header-block">
+          <small class="pb-2 header-block__tag text-white">
+            Дата регистрации 
+          </small>
+          <span class="header-block__text font-weight-bold text-white">
+            26.11.2019
+          </span>
+        </div>
+        <div class="d-flex px-4 flex-column header-block">
+          <small class="pb-2 header-block__tag text-white">
+            Ваша сумма депозитов:
+          </small>
+          <span class="header-block__text font-weight-bold text-white">
+            100.00 ₽
+          </span>
+        </div>
+        <div class="d-flex pl-4 flex-column">
+          <small class="pb-1 header-block__tag text-white">
+            Ваш баланс:
+          </small>
+          <span class="header-block__text font-weight-bold text-white">
+            0.0011 ₽
+          </span>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="container-fluid main-bg">
+    <div class="main-container bg-white tabs-block px-0 col-12">
+      <div class="w-100">
+        <div class="d-flex flex-wrap px- w-100 justify-content-center align-items-center col-12 tabs">
+          <a href="#" class="tab pt-2 px-4 font-weight-bold text-uppercase font-italic sec-text">
+            <i class="fas fa-wallet pr-3"></i>
+            Создать депозит
+          </a>
+          <a href="#" class="tab pt-2 px-4 font-weight-bold text-uppercase font-italic sec-text">
+            <i class="fas fa-cash-register pr-3"></i>
+            Вывод средств
+          </a>
+          <a href="#" class="tab pt-2 px-4 font-weight-bold text-uppercase font-italic sec-text">
+            <i class="far fa-list-alt pr-3"></i>
+            История операци
+          </a>
+          <a href="#" class="tab pt-2 px-4 font-weight-bold text-uppercase font-italic sec-text">
+            <i class="fas fa-users pr-3"></i>
+            Реферальная система
+          </a>
+          <a href="#" class="tab  tab_active pt-2 px-4 font-weight-bold text-uppercase font-italic sec-text">
+            <i class="fas fa-cog pr-3"></i>
+            Настройки
+          </a>
+        </div>
+      </div>
+      
+
+      
+      <div class="container-fluid mt-4 pr-xl-4 pb-5 w-100">
+        <div class="justify-content-center row mx-0">
+          <form class="col-xl-7 px-0 px-md-3 col-lg-9 col-md-10 col-sm-12">
+            <span class="d-block pb-4 text-uppercase history__title gain__title font-weight-bold">Персональные <span class="sec-text">настройки:</span></span>
+            <div class="w-100 rounded p-4 bg-light d-flex flex-column">
+              <span class="payment__title d-block text-uppercase pb-3 font-weight-bold font-italic">ИЗМЕНЕНИЕ ПАРОЛЯ</span>
+              <div class="d-flex rounded flex-sm-nowrap flex-wrap p-3 mb-3 align-items-center bg-white position-relative">
+                <span class="pass-text text-nowrap pr-4">
+                  <i class="fas fa-lock pr-3 pass-icon__lock color-main"></i>
+                  Текущий пароль</span>
+                <input required placeholder="********" type="password" class="w-100 border-bottom ml-sm-3 ml-0 mt-3 mt-sm-0 mr-4 mr-sm-5 pass-input">
+                <i class="fas fa-check-circle pl-3 pass-icon__circle color-main position-absolute"></i>
+              </div>
+              <div class="d-flex rounded flex-sm-nowrap flex-wrap p-3 mb-3 align-items-center bg-white position-relative">
+                <i class="fas fa-lock pr-3 pass-icon__lock color-main"></i>
+                <span class="pass-text text-nowrap pr-4">Новый пароль</span>
+                <input required placeholder="********" type="password" class="w-100 border-bottom ml-sm-3 ml-0 mt-3 mt-sm-0 mr-4 mr-sm-5 pass-input">
+                <i class="fas fa-check-circle pl-3 pass-icon__circle color-main position-absolute"></i>
+              </div>
+              <div class="d-flex rounded flex-sm-nowrap flex-wrap p-3 align-items-center bg-white position-relative">
+                <i class="fas fa-lock pr-3 pass-icon__lock color-main"></i>
+                <span class="pass-text text-nowrap pr-4">Повторите пароль</span>
+                <input required placeholder="********" type="password" class="w-100 border-bottom ml-sm-3 ml-0 mt-3 mt-sm-0 mr-4 mr-sm-5 pass-input">
+                <i class="fas fa-check-circle pl-3 pass-icon__circle color-main position-absolute"></i>
+              </div>
+            </div>
+            <div class="check-block d-flex pay-btn mt-3 mb-3 mx-0 px-0 w-100">
+              <span class="d-block w-100 rounded p-3 pr-5 pass-check">Старый пароль указан неверно.<i class="fas fa-times position-absolute color-main remove-pass-check"></i></span>
+            </div>
+            <div class="d-flex pay-btn mt-3 mb-3 mx-0 px-0 w-100">
+              <button class="pay__btn text-center text-uppercase text-white font-weight-bold">Применить изменения</button>
+            </div>
+          </form>
+      </div>
+    </div>
+  </div>
+    
+    
+
+    <div class="row p-5">
+      <span class="px-5 w-100 text-center font-weight-bold font-italic copyright">
+        Copyright © 2019. Maxicars Service All Rights Reserved
+      </span>
+    </div>
+  </div>
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
